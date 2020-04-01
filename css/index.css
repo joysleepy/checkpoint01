@@ -134,3 +134,20 @@ div#footer{
     border: 1px solid black;
 }
 
+/* Media queries */
+@media screen and (min-width: 0px) and (max-width: 500px){
+    .container{
+        display:grid;
+        grid-gap: 0px;
+        height: 100vh;
+        
+        /* Definimos un layout clasico de 3 filas y 2 columnas */
+        grid-template: 50px 1fr 1fr 100px / 100%;
+    
+        /* En esta clase veremos el concepto de Areas */
+        grid-template-areas:    "header" 
+                                "content"
+                                "left" 
+                                "footer";
+    } 
+}
