@@ -8,7 +8,7 @@ body{
     height: 100vh;
     
     /* Definimos un layout clasico de 3 filas y 2 columnas */
-    grid-template: 100px 1fr 150px / 200px 1fr;
+    grid-template: 100px 1fr 150px / 300px 1fr;
 
     /* En esta clase veremos el concepto de Areas */
     grid-template-areas:    "header header" 
@@ -58,8 +58,10 @@ div#left{
 }
 
 div.leftnote figure{
-    max-width: 30%;
+    /*max-width: 30%;*/
+    width: 100px;
     display: inline-block;
+    margin: 0 5px 0 0;
 }
 
 div.leftnote figure img{
