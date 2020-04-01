@@ -1,0 +1,134 @@
+body{
+    font-family: Arial;
+}
+
+.container{
+    display:grid;
+    grid-gap: 0px;
+    height: 100vh;
+    
+    /* Definimos un layout clasico de 3 filas y 2 columnas */
+    grid-template: 100px 1fr 150px / 200px 1fr;
+
+    /* En esta clase veremos el concepto de Areas */
+    grid-template-areas:    "header header" 
+                            "left content" 
+                            "footer footer";
+}
+
+/* Definimos clases de cada una de estas areas */
+div#header{
+    background: black;
+    color: white;
+    grid-area: header;
+    border: none !important;
+}
+
+div#logo{
+    display: inline-block;
+    width: 20%;
+}
+
+div#search{
+    text-align: right;
+    display: inline-block;
+    width: 78%;
+}
+
+div#search input{
+    height: 24px;
+    margin-right: -5px;
+    width: 200px;
+}
+
+button{
+    background: red;
+    border:none;
+    color: white;
+    width: 90px;
+    height: 30px;
+}
+
+/* Sidebar left */
+
+div#left{
+    background: none !important;
+    grid-area: left;
+    border: none !important;
+}
+
+div.leftnote figure{
+    max-width: 30%;
+    display: inline-block;
+}
+
+div.leftnote figure img{
+    width: 100%;
+}
+
+div.leftnote .info{
+    max-width: 60%;
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+div.leftnote div.info h2{
+    font-size: 0.8em;
+    color: #cf142b;
+    font-weight:bold;
+    margin-bottom: 0px;
+}
+
+div.leftnote div.info p{
+    font-size: 0.6em;
+    font-weight:bold;
+    color: rgb(103, 103, 103);
+    margin-top: 0px;
+}
+
+/* Content */
+
+div#content{
+    background: rgb(244, 243, 232);
+    grid-area: content;
+    border: none !important;
+}
+
+div#content section img{
+    width: 100%;
+    background-size: cover;
+}
+
+div#content section h2{
+    width: 16%;
+    background: #cf142b;
+    color: white;
+    margin-left: 42%;
+    margin-right: 42%;
+}
+
+div#content section div{
+    text-align: center;
+}
+
+div#content section div p{
+    color: black;
+}
+
+/* Footer */
+
+div#footer{
+    background: gray;
+    grid-area: footer;
+    text-align: center;
+    color: white;
+    border: none !important;
+    padding-top: 4em;
+}
+
+.item{
+    background: lightgoldenrodyellow;
+    padding: 10px;
+    border: 1px solid black;
+}
+
